@@ -3,11 +3,47 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     
-    // ================= LANGUAGE DROPDOWN WITH LOADING SCREEN =================
+    // ================= LOADING SCREEN HELPER =================
+    const loadingScreen = document.getElementById('loadingScreen');
+    const loadingIcon = document.getElementById('loadingIcon');
+    const loadingText = document.getElementById('loadingText');
+    const loadingSubtext = document.getElementById('loadingSubtext');
+    const loadingProgress = document.getElementById('loadingProgress');
+    
+    function showLoadingScreen(config) {
+        if (!loadingScreen) return;
+        
+        // Update loading screen content
+        if (loadingIcon) loadingIcon.textContent = config.icon || '🎮';
+        if (loadingText) loadingText.textContent = config.text || 'Loading...';
+        if (loadingSubtext) loadingSubtext.textContent = config.subtext || '';
+        
+        // Reset and set animation duration
+        if (loadingProgress) {
+            loadingProgress.style.animation = 'none';
+            loadingProgress.offsetHeight; // Trigger reflow
+            loadingProgress.style.animation = `loadingProgress ${config.duration || 2}s ease-in-out forwards`;
+        }
+        
+        // Add project-loading class for faster animation if needed
+        if (config.isProject) {
+            loadingScreen.classList.add('project-loading');
+        } else {
+            loadingScreen.classList.remove('project-loading');
+        }
+        
+        loadingScreen.classList.add('active');
+        
+        // Navigate after duration
+        setTimeout(() => {
+            window.location.href = config.url;
+        }, (config.duration || 2) * 1000);
+    }
+    
+    // ================= LANGUAGE DROPDOWN =================
     const langToggle = document.getElementById('langToggle');
     const langDropdown = document.querySelector('.lang-dropdown');
     const langOptions = document.querySelectorAll('.lang-option');
-    const loadingScreen = document.getElementById('loadingScreen');
     
     if (langToggle && langDropdown) {
         langToggle.addEventListener('click', (e) => {
@@ -26,27 +62,46 @@ document.addEventListener('DOMContentLoaded', function() {
         langOptions.forEach(option => {
             option.addEventListener('click', () => {
                 const targetUrl = option.dataset.url;
+                const lang = option.dataset.lang;
                 const currentPage = window.location.pathname.split('/').pop() || 'index.html';
                 
                 // Only redirect if it's a different page
                 if (targetUrl && targetUrl !== currentPage) {
-                    // Show loading screen
-                    if (loadingScreen) {
-                        loadingScreen.classList.add('active');
-                        
-                        // Redirect after 2 seconds
-                        setTimeout(() => {
-                            window.location.href = targetUrl;
-                        }, 2000);
-                    } else {
-                        window.location.href = targetUrl;
-                    }
+                    const isFrench = lang === 'fr';
+                    showLoadingScreen({
+                        icon: isFrench ? '🥐' : '🍔',
+                        text: isFrench ? 'Loading French...' : 'Loading English...',
+                        subtext: isFrench ? 'Hold my croissants' : 'Hold my burgers',
+                        url: targetUrl,
+                        duration: 2,
+                        isProject: false
+                    });
                 }
                 
                 langDropdown.classList.remove('open');
             });
         });
     }
+    
+    // ================= PROJECT LOADING SCREEN =================
+    const projectLinks = document.querySelectorAll('.project-link');
+    
+    projectLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetUrl = link.getAttribute('href');
+            const projectName = link.dataset.project || 'Project';
+            
+            showLoadingScreen({
+                icon: '🎮',
+                text: `Loading ${projectName}...`,
+                subtext: 'Preparing the experience',
+                url: targetUrl,
+                duration: 1,
+                isProject: true
+            });
+        });
+    });
     
     // ================= CUSTOM CURSOR =================
     const cursorDot = document.querySelector('.cursor-dot');

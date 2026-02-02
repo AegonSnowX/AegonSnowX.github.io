@@ -33,13 +33,13 @@
     text-align: center;
 }
 
-.loading-croissant {
+.loading-icon {
     font-size: 80px;
-    animation: croissantBounce 1s ease-in-out infinite;
+    animation: iconBounce 1s ease-in-out infinite;
     margin-bottom: 30px;
 }
 
-@keyframes croissantBounce {
+@keyframes iconBounce {
     0%, 100% { transform: translateY(0) rotate(0deg); }
     25% { transform: translateY(-20px) rotate(-10deg); }
     50% { transform: translateY(0) rotate(0deg); }
@@ -82,6 +82,130 @@
 @keyframes loadingProgress {
     0% { width: 0%; }
     100% { width: 100%; }
+}
+
+/* Project loading - faster animation */
+.loading-screen.project-loading .loading-progress {
+    animation: loadingProgressFast 1s ease-in-out forwards;
+}
+
+@keyframes loadingProgressFast {
+    0% { width: 0%; }
+    100% { width: 100%; }
+}
+
+/* ================= SOCIAL BUTTON GLOW EFFECTS ================= */
+/* GitHub - Purple glow */
+.social-btn[title="GitHub"]:hover,
+.social-link-card.github:hover {
+    border-color: #8b5cf6 !important;
+    color: #8b5cf6 !important;
+    box-shadow: 0 0 30px rgba(139, 92, 246, 0.5), 0 0 60px rgba(139, 92, 246, 0.3) !important;
+    background: rgba(139, 92, 246, 0.1) !important;
+}
+
+.social-link-card.github:hover .social-link-icon {
+    color: #8b5cf6;
+}
+
+/* LinkedIn - Blue glow */
+.social-btn[title="LinkedIn"]:hover,
+.social-link-card.linkedin:hover {
+    border-color: #0077b5 !important;
+    color: #0077b5 !important;
+    box-shadow: 0 0 30px rgba(0, 119, 181, 0.5), 0 0 60px rgba(0, 119, 181, 0.3) !important;
+    background: rgba(0, 119, 181, 0.1) !important;
+}
+
+.social-link-card.linkedin:hover .social-link-icon {
+    color: #0077b5;
+}
+
+/* Instagram - Pink/Orange gradient glow */
+.social-btn[title="Instagram"]:hover,
+.social-link-card.instagram:hover {
+    border-color: #e1306c !important;
+    color: #e1306c !important;
+    box-shadow: 0 0 30px rgba(225, 48, 108, 0.5), 0 0 60px rgba(252, 175, 69, 0.3) !important;
+    background: rgba(225, 48, 108, 0.1) !important;
+}
+
+.social-link-card.instagram:hover .social-link-icon {
+    color: #e1306c;
+}
+
+/* YouTube - Red glow */
+.social-btn[title="YouTube"]:hover {
+    border-color: #ff0000 !important;
+    color: #ff0000 !important;
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.5), 0 0 60px rgba(255, 0, 0, 0.3) !important;
+    background: rgba(255, 0, 0, 0.1) !important;
+}
+
+/* Email - Cyan glow */
+.social-btn[title="Email"]:hover,
+.social-link-card.email:hover {
+    border-color: #00d4ff !important;
+    color: #00d4ff !important;
+    box-shadow: 0 0 30px rgba(0, 212, 255, 0.5), 0 0 60px rgba(0, 212, 255, 0.3) !important;
+    background: rgba(0, 212, 255, 0.1) !important;
+}
+
+.social-link-card.email:hover .social-link-icon {
+    color: #00d4ff;
+}
+
+/* Twitter/X - Sky Blue glow */
+.social-btn[title="Twitter"]:hover {
+    border-color: #1da1f2 !important;
+    color: #1da1f2 !important;
+    box-shadow: 0 0 30px rgba(29, 161, 242, 0.5), 0 0 60px rgba(29, 161, 242, 0.3) !important;
+    background: rgba(29, 161, 242, 0.1) !important;
+}
+
+/* General social link card hover enhancements */
+.social-link-card:hover h3 {
+    color: inherit;
+}
+
+.social-link-card:hover {
+    transform: translateY(-8px) scale(1.02);
+}
+
+/* Hero section social buttons specific colors */
+.hero-buttons .social-btn:nth-child(1):hover { /* GitHub */
+    border-color: #8b5cf6 !important;
+    color: #8b5cf6 !important;
+    box-shadow: 0 0 25px rgba(139, 92, 246, 0.6) !important;
+    background: rgba(139, 92, 246, 0.15) !important;
+}
+
+.hero-buttons .social-btn:nth-child(2):hover { /* Instagram */
+    border-color: #e1306c !important;
+    color: #e1306c !important;
+    box-shadow: 0 0 25px rgba(225, 48, 108, 0.6) !important;
+    background: rgba(225, 48, 108, 0.15) !important;
+}
+
+.hero-buttons .social-btn:nth-child(3):hover { /* YouTube */
+    border-color: #ff0000 !important;
+    color: #ff0000 !important;
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.6) !important;
+    background: rgba(255, 0, 0, 0.15) !important;
+}
+
+.hero-buttons .social-btn:nth-child(4):hover { /* LinkedIn */
+    border-color: #0077b5 !important;
+    color: #0077b5 !important;
+    box-shadow: 0 0 25px rgba(0, 119, 181, 0.6) !important;
+    background: rgba(0, 119, 181, 0.15) !important;
+}
+
+.hero-buttons .social-btn:nth-child(5):hover { /* GitHub duplicate */
+    border-color: #8b5cf6 !important;
+    color: #8b5cf6 !important;
+    box-shadow: 0 0 25px rgba(139, 92, 246, 0.6) !important;
+    background: rgba(139, 92, 246, 0.15) !important;
 }
 
 :root {
