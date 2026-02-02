@@ -3,10 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Engine Architecture - Aegon Portfolio</title>
+    <title>Mad Dice - Aegon Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+        <div class="noise-overlay"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <span class="logo-text">AEGON</span>
+            <span class="logo-dot"></span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html#home" class="nav-link">Home</a>
+            <a href="index.html#projects" class="nav-link active">Projects</a>
+            <a href="index.html#tech" class="nav-link">About</a>
+            <a href="index.html#contact" class="nav-link">Contact</a>
+        </div>
+        <a href="index.html#contact" class="nav-cta">Let's Talk</a>
+    </nav>
+
     <section class="page project-detail">
         <div class="project-detail-container">
             <a href="index.html" class="back-link">← Back to Portfolio</a>
@@ -17,9 +48,9 @@
                 <div class="hero-summary-box">
                     <div class="summary-content">
                         <h1>Mad Dice</h1>
-                        <p class="project-meta-hero">Core Programmer | Systems Design | C++</p>
+                        <p class="project-meta-hero">Core Programmer | Game Design | C++ & Blueprints</p>
                         <p class="summary-text">
-                            Built a scalable game design from scratch with modular systems. Optimized for real-time performance with clean separation of concerns.
+                            A Balatro-styled dice game built in Unreal Engine. Players roll dice to achieve specific combinations and score points through strategic decision-making. Features multiple rounds, engaging mechanics, and a vibrant interface.
                         </p>
                     </div>
                 </div>
@@ -28,7 +59,7 @@
                 <div class="hero-image-box">
                     <div class="glow-ring-project"></div>
                     <div class="circular-border"></div>
-                    <img src="Assests/image.png" alt="Game Engine Architecture">
+                    <img src="Assests/MadDice/image.png" alt="Mad Dice Game">
                 </div>
             </div>
 
@@ -43,15 +74,15 @@
                     </div>
                     <div class="spec-card">
                         <p class="spec-label">Team Size</p>
-                        <p class="spec-value">4</p>
+                        <p class="spec-value">4 Members</p>
                     </div>
                     <div class="spec-card">
                         <p class="spec-label">Game Engine</p>
-                        <p class="spec-value">Unreal 3D</p>
+                        <p class="spec-value">Unreal Engine 5</p>
                     </div>
                     <div class="spec-card">
                         <p class="spec-label">Primary Language</p>
-                        <p class="spec-value">C++, Blueprints</p>
+                        <p class="spec-value">C++ & Blueprints</p>
                     </div>
                     <div class="spec-card">
                         <p class="spec-label">My Role</p>
@@ -59,7 +90,7 @@
                     </div>
                     <div class="spec-card">
                         <p class="spec-label">Platform</p>
-                        <p class="spec-value">Steam</p>
+                        <p class="spec-value">Steam (PC)</p>
                     </div>
                 </div>
             </div>
@@ -73,45 +104,55 @@
                         <svg class="checkmark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <polyline points="20 6 9 17 4 12"></polyline>
                         </svg>
-                        <span>Spring joint-based deformable mesh system</span>
+                        <span>Strategic dice rolling mechanics with combo system</span>
                     </div>
                     <div class="feature-item">
                         <svg class="checkmark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <polyline points="20 6 9 17 4 12"></polyline>
                         </svg>
-                        <span>Dynamic stress calculation and destruction</span>
+                        <span>Dynamic scoring system with multipliers</span>
                     </div>
                     <div class="feature-item">
                         <svg class="checkmark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <polyline points="20 6 9 17 4 12"></polyline>
                         </svg>
-                        <span>Procedural destruction animation</span>
+                        <span>Realistic 3D dice physics simulation</span>
                     </div>
                     <div class="feature-item">
                         <svg class="checkmark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <polyline points="20 6 9 17 4 12"></polyline>
                         </svg>
-                        <span>Advanced collision detection with soft body integration</span>
+                        <span>Vibrant UI with smooth animations</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg class="checkmark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <span>Multiple game modes and difficulty levels</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg class="checkmark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <span>Progression system with unlockable content</span>
                     </div>
                 </div>
             </div>
 
             <div class="experience-flow-section">
                 <h2>Experience Mad Dice</h2>
-                <p class="flow-subtitle">Ready to throw some Dices? Play the game and try your luck firsthand.</p>
+                <p class="flow-subtitle">Ready to throw some dice? Play the game and try your luck firsthand.</p>
                 
                 <div class="flow-buttons">
-                    <a href="https://store.steampowered.com/app/4175350/Mad_Dice/" class="btn-flow btn-flow-primary">
+                    <a href="https://store.steampowered.com/app/4175350/Mad_Dice/" target="_blank" class="btn-flow btn-flow-primary">
                         <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
                             <polygon points="5 3 19 12 5 21 5 3"></polygon>
                         </svg>
-                        Play Now
+                        Play on Steam
                     </a>
-                    <a href="https://store.steampowered.com/app/4175350/Mad_Dice/" class="btn-flow btn-flow-secondary">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
-                            <circle cx="12" cy="12" r="1"></circle>
-                            <path d="M9.09 9a3 3 0 0 1 5.82 0"></path>
-                            <path d="M6.18 6.18A9 9 0 0 1 17.82 17.82"></path>
+                    <a href="https://github.com/AegonSnowX" target="_blank" class="btn-flow btn-flow-secondary">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                         </svg>
                         View Source
                     </a>
@@ -128,16 +169,16 @@
             <!-- Project Footer -->
             <div class="project-footer">
                 <div class="footer-left">
-                    <h3>≈Mad Dice</h3>
-                    <p>A Steam project</p>
+                    <h3>Mad Dice</h3>
+                    <p>A Steam Release Project</p>
                 </div>
                 
                 <div class="footer-links">
                     <div class="footer-column">
                         <h4>Project</h4>
-                        <a href="">Gameplay</a>
-                        <a href="https://store.steampowered.com/app/4175350/Mad_Dice/">Play Game</a>
-                        <a href="">Source Code</a>
+                        <a href="https://store.steampowered.com/app/4175350/Mad_Dice/" target="_blank">Steam Page</a>
+                        <a href="https://store.steampowered.com/app/4175350/Mad_Dice/" target="_blank">Play Game</a>
+                        <a href="https://github.com/AegonSnowX" target="_blank">Source Code</a>
                     </div>
                     <div class="footer-column">
                         <h4>Developer</h4>
@@ -149,5 +190,6 @@
             </div>
         </div>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>
