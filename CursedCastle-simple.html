@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cursed Castle (Simple) - Aegon Portfolio</title>
+  <link rel="stylesheet" href="simple.css" /></head>
+<body>
+  <div class="mode-gate mode-gate--active" id="modeGate" aria-hidden="false">
+    <div class="mode-gate-card">
+      <h2>Choose your experience</h2>
+      <p>
+        Do you want a <strong>simple</strong>, minimal HTML version (calm colors, almost no animations),
+        or the <strong>colorful</strong> animated version?
+      </p>
+      <div class="mode-gate-actions">
+        <button class="primary" id="chooseSimple">Simple (Vanilla HTML)</button>
+        <button id="chooseColorful">Colorful (Animated)</button>
+      </div>
+    </div>
+  </div>
+  <script src="mode-gate.js"></script>
+
+  <header class="navbar">
+    <div class="nav-inner">
+      <a class="brand" href="index-simple.html#projects">AEGON</a>
+      <nav class="nav-links">
+        <a href="index-simple.html#projects">Projects</a>
+        <a href="index-simple.html#experience">Experience</a>
+        <a href="index-simple.html#contact">Contact</a>
+      </nav>
+      <div class="nav-tools">
+        <span class="mode-pill">Simple</span>
+        <button class="mode-toggle" type="button" data-mode-toggle>Switch Mode</button>
+        <div class="lang-switch" aria-label="Language">
+          <a class="active" href="CursedCastle-simple.html">EN</a>
+          <a href="CursedCastle-fr-simple.html">FR</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <a class="btn" href="index-simple.html#projects">← Back</a>
+    </section>
+
+    <section class="section">
+      <div class="hero">
+        <div>
+          <div class="kicker">Horror Adventure · Puzzle Design</div>
+          <h1>Cursed Castle</h1>
+          <p class="desc">
+            A dark fantasy horror adventure game set in a haunted medieval castle. Explore corridors, solve puzzles,
+            and face supernatural entities while uncovering the castle’s secrets.
+          </p>
+          <div class="actions">
+            <a class="btn primary" target="_blank" rel="noopener" href="https://aegonsnow.itch.io/cursed-castle">Download</a>
+            <a class="btn" target="_blank" rel="noopener" href="https://github.com/AegonSnowX/McGameJam2026">Source</a>
+          </div>
+        </div>
+        <div>
+          <img class="avatar" src="Assests/CursedCastle/mcgill2026thumbnail.png" alt="Cursed Castle preview" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Specifications</h2>
+      <div class="grid">
+        <div class="card"><strong>Status</strong><br/>Completed</div>
+        <div class="card"><strong>Team size</strong><br/>2</div>
+        <div class="card"><strong>Engine</strong><br/>Unity 3D</div>
+        <div class="card"><strong>Language</strong><br/>C#</div>
+        <div class="card"><strong>Role</strong><br/>Lead Dev & Enemy AI</div>
+        <div class="card"><strong>Platform</strong><br/>PC</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Key features</h2>
+      <div class="card">
+        <ul>
+          <li>Atmospheric horror with dynamic lighting</li>
+          <li>Castle puzzle progression</li>
+          <li>AI enemies with unique behaviors</li>
+          <li>Immersive soundscape + jump scares</li>
+          <li>Noise detection system</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>The story</h2>
+      <div class="card">
+        <ul>
+          <li>You awaken in a cursed fortress haunted by a horse-head demon.</li>
+          <li>Navigate crypts, halls, and towers while avoiding supernatural horrors.</li>
+          <li>Collect keys through clues, visions, and ghostly encounters.</li>
+          <li>Your choices determine whether you break the curse or become another lost soul.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">© 2026 Aegon</footer>
+  <script src="simple.js"></script>
+</body>
+</html>
+
+

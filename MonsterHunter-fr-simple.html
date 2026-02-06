@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monster Hunter (Simple) - Aegon Portfolio</title>
+  <link rel="stylesheet" href="simple.css" /></head>
+<body>
+  <div class="mode-gate mode-gate--active" id="modeGate" aria-hidden="false">
+    <div class="mode-gate-card">
+      <h2>Choisissez votre expérience</h2>
+      <p>
+        Préférez-vous une version <strong>simple</strong> en HTML (couleurs calmes, presque aucune animation),
+        ou la version <strong>colorée</strong> et animée?
+      </p>
+      <div class="mode-gate-actions">
+        <button class="primary" id="chooseSimple">Simple (HTML Vanilla)</button>
+        <button id="chooseColorful">Colorée (Animée)</button>
+      </div>
+    </div>
+  </div>
+  <script src="mode-gate.js"></script>
+
+  <header class="navbar">
+    <div class="nav-inner">
+      <a class="brand" href="index-fr-simple.html#projects">AEGON</a>
+      <nav class="nav-links">
+        <a href="index-fr-simple.html#projects">Projets</a>
+        <a href="index-fr-simple.html#experience">Expérience</a>
+        <a href="index-fr-simple.html#contact">Contact</a>
+      </nav>
+      <div class="nav-tools">
+        <span class="mode-pill">Simple</span>
+        <button class="mode-toggle" type="button" data-mode-toggle>Switch Mode</button>
+        <div class="lang-switch" aria-label="Langue">
+          <a href="MonsterHunter-simple.html">EN</a>
+          <a class="active" href="MonsterHunter-fr-simple.html">FR</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <a class="btn" href="index-fr-simple.html#projects">← Retour</a>
+    </section>
+
+    <section class="section">
+      <div class="hero">
+        <div>
+          <div class="kicker">POO · Multithreading · Système de combat</div>
+          <h1>Monster Hunter</h1>
+          <p class="desc">
+            Un jeu console de chasse aux monstres démontrant des principes avancés de POO, le multithreading et C#.
+            Construit avec un moteur .NET personnalisé pour plus de flexibilité.
+          </p>
+          <div class="actions">
+            <a class="btn primary" target="_blank" rel="noopener" href="https://github.com/AegonSnowX">GitHub</a>
+            <a class="btn" target="_blank" rel="noopener" href="Assests/MonsterHunter/MonsterHunterPreview.mp4">Vidéo</a>
+          </div>
+        </div>
+        <div>
+          <img class="avatar" src="Assests/MonsterHunter/Screenshot 2026-01-26 220639.png" alt="Aperçu Monster Hunter" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Spécifications</h2>
+      <div class="grid">
+        <div class="card"><strong>Temps de développement</strong><br/>60 heures</div>
+        <div class="card"><strong>Taille de l’équipe</strong><br/>Solo</div>
+        <div class="card"><strong>Framework</strong><br/>.NET Console</div>
+        <div class="card"><strong>Langage</strong><br/>C#</div>
+        <div class="card"><strong>Rôle</strong><br/>Développeur solo</div>
+        <div class="card"><strong>Plateforme</strong><br/>Windows</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Fonctionnalités clés</h2>
+      <div class="card">
+        <ul>
+          <li>Systèmes joueur et ennemi multithreadés</li>
+          <li>Architecture POO propre (SOLID)</li>
+          <li>Chargement de carte via fichiers texte</li>
+          <li>Combat au tour par tour avec améliorations</li>
+          <li>Pattern Entity Component System</li>
+          <li>Boucle de jeu basée sur événements</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">© 2026 Aegon</footer>
+  <script src="simple.js"></script>
+</body>
+</html>
+
+

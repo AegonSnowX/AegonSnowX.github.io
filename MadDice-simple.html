@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mad Dice (Simple) - Aegon Portfolio</title>
+  <link rel="stylesheet" href="simple.css" /></head>
+<body>
+  <div class="mode-gate mode-gate--active" id="modeGate" aria-hidden="false">
+    <div class="mode-gate-card">
+      <h2>Choose your experience</h2>
+      <p>
+        Do you want a <strong>simple</strong>, minimal HTML version (calm colors, almost no animations),
+        or the <strong>colorful</strong> animated version?
+      </p>
+      <div class="mode-gate-actions">
+        <button class="primary" id="chooseSimple">Simple (Vanilla HTML)</button>
+        <button id="chooseColorful">Colorful (Animated)</button>
+      </div>
+    </div>
+  </div>
+  <script src="mode-gate.js"></script>
+
+  <header class="navbar">
+    <div class="nav-inner">
+      <a class="brand" href="index-simple.html#projects">AEGON</a>
+      <nav class="nav-links">
+        <a href="index-simple.html#projects">Projects</a>
+        <a href="index-simple.html#experience">Experience</a>
+        <a href="index-simple.html#contact">Contact</a>
+      </nav>
+      <div class="nav-tools">
+        <span class="mode-pill">Simple</span>
+        <button class="mode-toggle" type="button" data-mode-toggle>Switch Mode</button>
+        <div class="lang-switch" aria-label="Language">
+          <a class="active" href="MadDice-simple.html">EN</a>
+          <a href="MadDice-fr-simple.html">FR</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <a class="btn" href="index-simple.html#projects">← Back</a>
+    </section>
+
+    <section class="section">
+      <div class="hero">
+        <div>
+          <div class="kicker">Core Programmer · Game Design</div>
+          <h1>Mad Dice</h1>
+          <p class="desc">
+            A Balatro-styled dice game built in Unreal Engine. Players roll dice to achieve combinations and score
+            points through strategic decision-making.
+          </p>
+          <div class="actions">
+            <a class="btn primary" target="_blank" rel="noopener" href="https://store.steampowered.com/app/4175350/Mad_Dice/">Steam</a>
+            <a class="btn" target="_blank" rel="noopener" href="https://github.com/AegonSnowX">Source</a>
+          </div>
+        </div>
+        <div>
+          <img class="avatar" src="Assests/MadDice/MadDice.png" alt="Mad Dice preview" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Specifications</h2>
+      <div class="grid">
+        <div class="card"><strong>Development time</strong><br/>3 weeks</div>
+        <div class="card"><strong>Team size</strong><br/>4 members</div>
+        <div class="card"><strong>Engine</strong><br/>Unreal Engine 5</div>
+        <div class="card"><strong>Language</strong><br/>C++ & Blueprints</div>
+        <div class="card"><strong>Role</strong><br/>Core Programmer</div>
+        <div class="card"><strong>Platform</strong><br/>Steam (PC)</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Key features</h2>
+      <div class="card">
+        <ul>
+          <li>Strategic dice rolling mechanics with combo system</li>
+          <li>Dynamic scoring system with multipliers</li>
+          <li>3D dice physics</li>
+          <li>Vibrant UI (kept minimal in this simple version)</li>
+          <li>Multiple modes and difficulty levels</li>
+          <li>Progression with unlockable content</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">© 2026 Aegon</footer>
+  <script src="simple.js"></script>
+</body>
+</html>
+
+

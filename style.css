@@ -7,6 +7,80 @@
     padding: 0;
 }
 
+/* ================= MODE GATE (SIMPLE vs COLORFUL) ================= */
+html.mode-gate-skip .mode-gate {
+    display: none !important;
+}
+
+body.mode-gate-open {
+    overflow: hidden;
+}
+
+.mode-gate {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background: rgba(3, 0, 20, 0.88);
+    z-index: 20000;
+    pointer-events: all;
+}
+
+.mode-gate-card {
+    width: min(720px, 100%);
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    padding: 22px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.55);
+}
+
+.mode-gate-card h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.mode-gate-card p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.mode-gate-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.mode-gate-actions button {
+    appearance: none;
+    border: 1px solid var(--glass-border);
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--text-primary);
+    padding: 12px 14px;
+    border-radius: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.15s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    font-family: inherit;
+}
+
+.mode-gate-actions button:hover {
+    transform: translateY(-2px);
+    border-color: var(--primary-dim);
+    box-shadow: 0 0 30px rgba(0, 255, 136, 0.12);
+}
+
+.mode-gate-actions button.primary {
+    border-color: rgba(0, 255, 136, 0.35);
+    background: rgba(0, 255, 136, 0.08);
+}
+
 /* ================= LOADING SCREEN ================= */
 .loading-screen {
     position: fixed;
@@ -469,6 +543,27 @@ body {
 
 .nav-cta:hover::before {
     left: 0;
+}
+
+.nav-mode-toggle {
+    padding: 10px 24px;
+    border-radius: 30px;
+    border: 1px solid var(--glass-border);
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--text-primary);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.nav-mode-toggle:hover {
+    background: var(--primary);
+    color: var(--bg-dark);
+    border-color: var(--primary);
 }
 
 /* ================= PAGE SYSTEM ================= */
