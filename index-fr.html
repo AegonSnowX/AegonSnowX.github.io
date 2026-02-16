@@ -1,423 +1,428 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aegon Portfolio - Français</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Aegon Portfolio - Francais</title>
+ <link rel="stylesheet" href="style.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <script src="mode-gate.js"></script>
+ <script src="mode-gate.js"></script>
 
 <!-- Loading Screen -->
-    <div class="loading-screen" id="loadingScreen">
-        <div class="loading-content">
-            <div class="loading-icon" id="loadingIcon">🍔</div>
-            <h2 class="loading-text" id="loadingText">Loading English...</h2>
-            <p class="loading-subtext" id="loadingSubtext">Hold my burgers</p>
-            <div class="loading-bar">
-                <div class="loading-progress" id="loadingProgress"></div>
-            </div>
-        </div>
-    </div>
+ <div class="loading-screen" id="loadingScreen">
+ <div class="loading-content">
+ <div class="loading-icon" id="loadingIcon">FR</div>
+ <h2 class="loading-text" id="loadingText">Chargement du francais...</h2>
+ <p class="loading-subtext" id="loadingSubtext">Patientez un instant</p>
+ <div class="loading-bar">
+ <div class="loading-progress" id="loadingProgress"></div>
+ </div>
+ </div>
+ </div>
 
-    <!-- Animated Background -->
-    <div class="animated-bg">
-        <div class="gradient-orb orb-1"></div>
-        <div class="gradient-orb orb-2"></div>
-        <div class="gradient-orb orb-3"></div>
-        <div class="noise-overlay"></div>
-        <div class="grid-overlay"></div>
-    </div>
+ <!-- Animated Background -->
+ <div class="animated-bg">
+ <div class="gradient-orb orb-1"></div>
+ <div class="gradient-orb orb-2"></div>
+ <div class="gradient-orb orb-3"></div>
+ <div class="noise-overlay"></div>
+ <div class="grid-overlay"></div>
+ </div>
 
-    <!-- Custom Cursor -->
-    <div class="cursor-dot"></div>
-    <div class="cursor-outline"></div>
+ <!-- Custom Cursor -->
+ <div class="cursor-dot"></div>
+ <div class="cursor-outline"></div>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-logo">
-            <span class="logo-text">AEGON</span>
-            <span class="logo-dot"></span>
-        </div>
-        <div class="nav-links">
-            <a href="#home" class="nav-link active">Accueil</a>
-            <a href="#projects" class="nav-link">Projets</a>
-            <a href="#experience" class="nav-link">Expérience</a>
-            <a href="#tech" class="nav-link">À propos</a>
-            <a href="#contact" class="nav-link">Contact</a>
-        </div>
-        <div class="nav-right">
-            <!-- Language Dropdown -->
-            <div class="lang-dropdown">
-                <button class="lang-btn" id="langToggle">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="globe-icon">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <line x1="2" y1="12" x2="22" y2="12"></line>
-                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-                    </svg>
-                    <span id="currentLang">Français</span>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="arrow-icon">
-                        <polyline points="6 9 12 15 18 9"></polyline>
-                    </svg>
-                </button>
-                <div class="lang-menu" id="langMenu">
-                    <div class="lang-menu-header">Langue</div>
-                    <button class="lang-option" data-lang="en" data-url="index.html">
-                        <span class="lang-flag">🇺🇸</span>
-                        <span>English</span>
-                        <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                            <polyline points="20 6 9 17 4 12"></polyline>
-                        </svg>
-                    </button>
-                    <button class="lang-option active" data-lang="fr" data-url="index-fr.html">
-                        <span class="lang-flag">🇫🇷</span>
-                        <span>Français</span>
-                        <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                            <polyline points="20 6 9 17 4 12"></polyline>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-            <button class="nav-mode-toggle" type="button" data-mode-toggle>Switch Mode</button>
-            <a href="#contact" class="nav-cta">Parlons</a>
-        </div>
-    </nav>
+ <!-- Navigation -->
+ <nav class="navbar">
+ <div class="nav-logo">
+ <span class="logo-text">AEGON</span>
+ <span class="logo-dot"></span>
+ </div>
+ <div class="nav-links">
+ <a href="#home" class="nav-link active">Accueil</a>
+ <a href="#projects" class="nav-link">Projets</a>
+ <a href="#experience" class="nav-link">Experience</a>
+ <a href="#tech" class="nav-link">A propos</a>
+ <a href="#contact" class="nav-link">Contact</a>
+ </div>
+ <div class="nav-right">
+ <!-- Language Dropdown -->
+ <div class="lang-dropdown">
+ <button class="lang-btn" id="langToggle">
+ <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="globe-icon">
+ <circle cx="12" cy="12" r="10"></circle>
+ <line x1="2" y1="12" x2="22" y2="12"></line>
+ <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+ </svg>
+ <span id="currentLang">Francais</span>
+ <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="arrow-icon">
+ <polyline points="6 9 12 15 18 9"></polyline>
+ </svg>
+ </button>
+ <div class="lang-menu" id="langMenu">
+ <div class="lang-menu-header">Langue</div>
+ <button class="lang-option" data-lang="en" data-url="index.html">
+ <span class="lang-flag">FR</span>
+ <span>English</span>
+ <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+ <polyline points="20 6 9 17 4 12"></polyline>
+ </svg>
+ </button>
+ <button class="lang-option active" data-lang="fr" data-url="index-fr.html">
+ <span class="lang-flag">FR</span>
+ <span>Francais</span>
+ <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+ <polyline points="20 6 9 17 4 12"></polyline>
+ </svg>
+ </button>
+ </div>
+ </div>
+ <button class="nav-mode-toggle" type="button" data-mode-toggle>Changer mode</button>
+ <a href="#contact" class="nav-cta">Parlons</a>
+ </div>
+ </nav>
 
-    <!-- HERO SECTION -->
-    <section class="page hero" id="home">
-        <div class="hero-text">
-            <div class="subtitle">
-                <span class="subtitle-line"></span>
-                <span>DÉVELOPPEUR DE JEUX</span>
-                <span class="subtitle-line"></span>
-            </div>
-            <div class="title">
-                <span class="title-line">Bonjour, je suis</span>
-                <span class="title-highlight">Sahaj Kirtan Veer Singh</span>
-            </div>
-            <div class="description">
-                Création de mondes immersifs et d'expériences de jeu inoubliables avec une technologie de pointe. Unity, Unreal Engine, et au-delà — repoussant les limites du divertissement interactif.
-            </div>
+ <!-- HERO SECTION -->
+ <section class="page hero" id="home">
+ <div class="hero-text">
+ <div class="subtitle">
+ <span class="subtitle-line"></span>
+ <span>DEVELOPPEUR DE JEUX</span>
+ <span class="subtitle-line"></span>
+ </div>
+ <div class="title">
+ <span class="title-line">Bonjour, je suis</span>
+ <span class="title-highlight">Sahaj Kirtan Veer Singh</span>
+ </div>
+ <div class="description">
+ Creation de mondes immersifs et d'experiences de jeu inoubliables avec une technologie de pointe. Unity, Unreal Engine, et au-del - repoussant les limites du divertissement interactif.
+ </div>
 
-            <div class="hero-buttons">
-                <a href="Assests/Sahaj_CV.pdf" download class="btn btn-cv magnetic">
-                    <span>VOIR CV</span>
-                    <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="12 5 19 12 12 19"></polyline>
-                    </svg>
-                </a>
-                <div class="social-buttons">
-                    <a href="https://github.com/AegonSnowX" target="_blank" class="social-btn" title="GitHub">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                        </svg>
-                    </a>
-                    <a href="https://instagram.com" target="_blank" class="social-btn" title="Instagram">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                        </svg>
-                    </a>
-                   
-                    <a href="https://www.linkedin.com/in/sahaj-ks/" target="_blank" class="social-btn" title="LinkedIn">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/>
-                        </svg>
-                    </a>
-                   
-                </div>
-            </div>
-        </div>
+ <div class="hero-buttons">
+ <a href="Assests/Sahaj_CV.pdf" download class="btn btn-cv magnetic">
+ <span>VOIR CV</span>
+ <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+ <line x1="5" y1="12" x2="19" y2="12"></line>
+ <polyline points="12 5 19 12 12 19"></polyline>
+ </svg>
+ </a>
+ <div class="social-buttons">
+ <a href="https://github.com/AegonSnowX" target="_blank" class="social-btn" title="GitHub">
+ <svg viewBox="0 0 24 24" fill="currentColor">
+ <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+ </svg>
+ </a>
+ <a href="https://instagram.com" target="_blank" class="social-btn" title="Instagram">
+ <svg viewBox="0 0 24 24" fill="currentColor">
+ <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+ </svg>
+ </a>
+ 
+ <a href="https://www.linkedin.com/in/sahaj-ks/" target="_blank" class="social-btn" title="LinkedIn">
+ <svg viewBox="0 0 24 24" fill="currentColor">
+ <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/>
+ </svg>
+ </a>
+ 
+ </div>
+ </div>
+ </div>
 
-        <!-- Profile Section - Redesigned -->
-        <div class="profile-container">
-            <div class="profile-frame">
-                <!-- Corner accents -->
-                <div class="corner-accent top-left"></div>
-                <div class="corner-accent top-right"></div>
-                <div class="corner-accent bottom-left"></div>
-                <div class="corner-accent bottom-right"></div>
-                <!-- Rotating border -->
-                <div class="rotating-border"></div>
-                <!-- Profile image -->
-                <div class="profile-image-wrapper">
-                    <img src="Assests/Profile/profile.png" alt="Aegon" />
-                </div>
-                <!-- Glow effect -->
-                <div class="profile-glow"></div>
-            </div>
-        </div>
+ <!-- Profile Section - Redesigned -->
+ <div class="profile-container">
+ <div class="profile-frame">
+ <!-- Corner accents -->
+ <div class="corner-accent top-left"></div>
+ <div class="corner-accent top-right"></div>
+ <div class="corner-accent bottom-left"></div>
+ <div class="corner-accent bottom-right"></div>
+ <!-- Rotating border -->
+ <div class="rotating-border"></div>
+ <!-- Profile image -->
+ <div class="profile-image-wrapper">
+ <img src="Assests/Profile/profile.png" alt="Aegon" />
+ </div>
+ <!-- Glow effect -->
+ <div class="profile-glow"></div>
+ </div>
+ </div>
 
-    </section>
+ </section>
 
-    <!-- PROJECTS SECTION -->
-    <section class="page" id="projects">
-        <div class="projects-container">
-            <div class="section-header">
-                <span class="section-tag">Portfolio</span>
-                <h2>Projets <span class="gradient-text">en Vedette</span></h2>
-                <p>Travaux sélectionnés axés sur les systèmes, la logique de gameplay et l'architecture propre.</p>
-            </div>
-            
-            <div class="projects-grid">
-                <!-- Project 1 - Mad Dice -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="Assests/MadDice/MadDice.png" alt="Jeu Mad Dice">
-                    </div>
-                    <div class="project-overlay">
-                        <div class="project-header">
-                            <h3>Mad Dice</h3>
-                        </div>
-                        <div class="project-description">
-                            <p>Un jeu de dés de style Balatro. Les joueurs lancent les dés à tour de rôle pour obtenir des combinaisons spécifiques et marquer des points. Le jeu propose plusieurs manches, des prises de décision stratégiques en Unreal 3D, et une interface vibrante et captivante.</p>
-                        </div>
-                        <a href="MadDice-fr.html" class="btn btn-primary btn-sm project-link" data-project="Mad Dice">Voir le Projet</a>
-                    </div>
-                </div>
+ <!-- PROJECTS SECTION -->
+ <section class="page" id="projects">
+ <div class="projects-container">
+ <div class="section-header">
+ <span class="section-tag">Portfolio</span>
+ <h2>Projets <span class="gradient-text">en Vedette</span></h2>
+ <p>Travaux selectionnes axes sur les systemes, la logique de gameplay et l'architecture propre.</p>
+ </div>
+ 
+ <div class="projects-grid">
+ <!-- Project 1 - Mad Dice -->
+ <div class="project-card">
+ <div class="project-image">
+ <img src="Assests/MadDice/MadDice.png" alt="Jeu Mad Dice">
+ </div>
+ <div class="project-overlay">
+ <div class="project-header">
+ <h3>Mad Dice</h3>
+ </div>
+ <div class="project-description">
+ <p>Un jeu de des de style Balatro. Les joueurs lancent les des tour de role pour obtenir des combinaisons specifiques et marquer des points. Le jeu propose plusieurs manches, des prises de decision strategiques en Unreal 3D, et une interface vibrante et captivante.</p>
+ </div>
+ <a href="MadDice-fr.html" class="btn btn-primary btn-sm project-link" data-project="Mad Dice">Voir le Projet</a>
+ </div>
+ </div>
 
-                <!-- Project 2 - Monster Hunter -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="Assests/MonsterHunter/Screenshot 2026-01-26 220639.png" alt="Jeu Monster Hunter">
-                    </div>
-                    <div class="project-overlay">
-                        <div class="project-header">
-                            <h3>Monster Hunter</h3>
-                        </div>
-                        <div class="project-description">
-                            <p>Un jeu de chasse aux monstres en console démontrant les principes avancés de POO, le multithreading et les fonctionnalités C#. Construit avec un moteur .NET personnalisé pour des performances maximales.</p>
-                        </div>
-                        <a href="MonsterHunter-fr.html" class="btn btn-primary btn-sm project-link" data-project="Monster Hunter">Voir le Projet</a>
-                    </div>
-                </div>
+ <!-- Project 2 - Monster Hunter -->
+ <div class="project-card">
+ <div class="project-image">
+ <img src="Assests/MonsterHunter/Screenshot 2026-01-26 220639.png" alt="Jeu Monster Hunter">
+ </div>
+ <div class="project-overlay">
+ <div class="project-header">
+ <h3>Monster Hunter</h3>
+ </div>
+ <div class="project-description">
+ <p>Un jeu de chasse aux monstres en console demontrant les principes avancs de POO, le multithreading et les fonctionnalites C#. Construit avec un moteur .NET personnalise pour des performances maximales.</p>
+ </div>
+ <a href="MonsterHunter-fr.html" class="btn btn-primary btn-sm project-link" data-project="Monster Hunter">Voir le Projet</a>
+ </div>
+ </div>
 
-                <!-- Project 3 - Cursed Castle -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="Assests/CursedCastle/mcgill2026thumbnail.png" alt="Jeu Cursed Castle">
-                    </div>
-                    <div class="project-overlay">
-                        <div class="project-header">
-                            <h3>Cursed Castle</h3>
-                        </div>
-                        <div class="project-description">
-                            <p>Attention, ils vous entendent. Dans ce jeu d'horreur fantastique situé dans un château médiéval hanté. Explorez des couloirs dangereux, résolvez d'anciens puzzles et affrontez des entités surnaturelles.</p>
-                        </div>
-                        <a href="CursedCastle-fr.html" class="btn btn-primary btn-sm project-link" data-project="Cursed Castle">Voir le Projet</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+ <!-- Project 3 - Cursed Castle -->
+ <div class="project-card">
+ <div class="project-image">
+ <img src="Assests/CursedCastle/mcgill2026thumbnail.png" alt="Jeu Cursed Castle">
+ </div>
+ <div class="project-overlay">
+ <div class="project-header">
+ <h3>Cursed Castle</h3>
+ </div>
+ <div class="project-description">
+ <p>Attention, ils vous entendent. Dans ce jeu d'horreur fantastique situ dans un chateau medieval hante. Explorez des couloirs dangereux, resolvez d'anciens puzzles et affrontez des entites surnaturelles.</p>
+ </div>
+ <a href="CursedCastle-fr.html" class="btn btn-primary btn-sm project-link" data-project="Cursed Castle">Voir le Projet</a>
+ </div>
+ </div>
+ </div>
+ </div>
+ </section>
 
-    <!-- EXPERIENCE SECTION -->
-    <section class="page" id="experience">
-        <div class="experience-container">
-            <div class="section-header">
-                <span class="section-tag">Mon Parcours</span>
-                <h2>Mon <span class="gradient-text">Expérience</span></h2>
-                <p>Étapes clés et réalisations dans mon parcours de développement</p>
-            </div>
+ <!-- EXPERIENCE SECTION -->
+ <section class="page" id="experience">
+ <div class="experience-container">
+ <div class="section-header">
+ <span class="section-tag">Mon Parcours</span>
+ <h2>Mon <span class="gradient-text">Experience</span></h2>
+ <p>Etapes cles et realisations dans mon parcours de developpement</p>
+ </div>
 
-            <div class="timeline">
-                <!-- 2026 Entry -->
-                <div class="timeline-item">
-                    <div class="timeline-marker">
-                        <div class="marker-dot"></div>
-                        <div class="marker-line"></div>
-                    </div>
-                    <div class="timeline-year">2026</div>
-                    <div class="timeline-content">
-                        <div class="timeline-card">
-                            <h3>McGill Game Jam 2026</h3>
-                            <p class="timeline-date">Janvier 2026</p>
-                            <p class="timeline-description">
-                                Participation au McGill Game Jam 2026, collaboration avec une équipe de développeurs et d'artistes talentueux pour créer un jeu d'horreur innovant "Cursed Castle" en 48 heures. Direction de la programmation de gameplay de base et implémentation du système de comportement d'IA ennemi. L'expérience a renforcé mes compétences en prototypage rapide, coordination d'équipe et livraison sous pression.
-                            </p>
-                            <div class="timeline-tags">
-                                <span class="tag">Unity</span>
-                                <span class="tag">C#</span>
-                                <span class="tag">Game Jam</span>
-                                <span class="tag">Projet d'Équipe</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+ <div class="timeline">
+ <!-- 2026 Entry -->
+ <div class="timeline-item">
+ <div class="timeline-marker">
+ <div class="marker-dot"></div>
+ <div class="marker-line"></div>
+ </div>
+ <div class="timeline-year">2026</div>
+ <div class="timeline-content">
+ <div class="timeline-card">
+ <h3>McGill Game Jam 2026</h3>
+ <p class="timeline-date">Janvier 2026</p>
+ <p class="timeline-description">
+ Participation au McGill Game Jam 2026, collaboration avec une equipe de developpeurs et d'artistes talentueux pour crer un jeu d'horreur innovant "Cursed Castle" en 48 heures. Direction de la programmation de gameplay de base et implementation du systeme de comportement d'IA ennemi. L'experience a renforce mes competences en prototypage rapide, coordination d'equipe et livraison sous pression.
+ </p>
+ <div class="timeline-tags">
+ <span class="tag">Unity</span>
+ <span class="tag">C#</span>
+ <span class="tag">Game Jam</span>
+ <span class="tag">Projet d'equipe</span>
+ </div>
+ </div>
+ </div>
+ </div>
 
-                <!-- 2025 Entry -->
-                <div class="timeline-item">
-                    <div class="timeline-marker">
-                        <div class="marker-dot"></div>
-                        <div class="marker-line"></div>
-                    </div>
-                    <div class="timeline-year">2025</div>
-                    <div class="timeline-content">
-                        <div class="timeline-card">
-                            <h3>NASA Space Apps Challenge 2025</h3>
-                            <p class="timeline-date">Octobre 2025</p>
-                            <p class="timeline-description">
-                                Participation au plus grand hackathon mondial annuel, NASA Space Apps Challenge. Développement d'une simulation d'exploration spatiale interactive qui visualisait les véritables ensembles de données de la NASA. Notre équipe a créé un outil éducatif qui aide les utilisateurs à comprendre les systèmes planétaires et les phénomènes spatiaux. Ce projet a combiné ma passion pour le développement de jeux avec la visualisation scientifique.
-                            </p>
-                            <div class="timeline-tags">
-                                <span class="tag">Hackathon</span>
-                                <span class="tag">NASA</span>
-                                <span class="tag">Visualisation</span>
-                                <span class="tag">Unity</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+ <!-- 2025 Entry -->
+ <div class="timeline-item">
+ <div class="timeline-marker">
+ <div class="marker-dot"></div>
+ <div class="marker-line"></div>
+ </div>
+ <div class="timeline-year">2025</div>
+ <div class="timeline-content">
+ <div class="timeline-card">
+ <h3>NASA Space Apps Challenge 2025</h3>
+ <p class="timeline-date">Octobre 2025</p>
+ <p class="timeline-description">
+ Participation au plus grand hackathon mondial annuel, NASA Space Apps Challenge. Developpement d'une simulation d'exploration spatiale interactive qui visualisait les veritables ensembles de donnees de la NASA. Notre equipe a cree un outil educatif qui aide les utilisateurs a comprendre les systemes planetaires et les phenomenes spatiaux. Ce projet a combine ma passion pour le developpement de jeux avec la visualisation scientifique.
+ </p>
+ <div class="timeline-tags">
+ <span class="tag">Hackathon</span>
+ <span class="tag">NASA</span>
+ <span class="tag">Visualisation</span>
+ <span class="tag">Unity</span>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </section>
 
-    <!-- TECH STACK SECTION -->
-    <section class="page dark" id="tech">
-        <div class="tech-container">
-            <div class="section-header">
-                <span class="section-tag">À Propos</span>
-                <h2>Le Développeur Derrière <span class="gradient-text">la Magie</span></h2>
-                <p>Passionné par la création d'expériences de jeu extraordinaires</p>
-            </div>
+ <!-- TECH STACK SECTION -->
+ <section class="page dark" id="tech">
+ <div class="tech-container">
+ <div class="section-header">
+ <span class="section-tag"> Propos</span>
+ <h2>Le Dveloppeur Derrire <span class="gradient-text">la Magie</span></h2>
+ <p>Passionn par la cration d'experiences de jeu extraordinaires</p>
+ </div>
 
-            <div class="tech-content">
-                <!-- About Section -->
-                <div class="about-section">
-                    <div class="about-icon">👨‍💻</div>
-                    <div class="about-box">
-                        <h3>Qui Je Suis</h3>
-                        <p>Je suis un étudiant passionné en développement de jeux au <strong>Collège LaSalle</strong>, poursuivant un DEC en informatique avec une spécialisation en développement de jeux. Mon parcours est alimenté par une curiosité insatiable pour créer des expériences de jeu immersives et innovantes qui repoussent les limites du divertissement interactif.</p>
-                        <p>Avec une expertise dans <strong>Unity</strong> et <strong>Unreal Engine</strong>, je combine compétence technique et vision créative pour créer des jeux qui captivent et inspirent les joueurs du monde entier.</p>
-                    </div>
-                </div>
+ <div class="tech-content">
+ <!-- About Section -->
+ <div class="about-section">
+ <div class="about-icon">DEV</div>
+ <div class="about-box">
+ <h3>Qui Je Suis</h3>
+ <p>Je suis un etudiant passionne en developpement de jeux au <strong>College LaSalle</strong>, poursuivant un DEC en informatique avec une specialisation en developpement de jeux. Mon parcours est aliment par une curiosite insatiable pour crer des experiences de jeu immersives et innovantes qui repoussent les limites du divertissement interactif.</p>
+ <p>Avec une expertise dans <strong>Unity</strong> et <strong>Unreal Engine</strong>, je combine competence technique et vision creative pour crer des jeux qui captivent et inspirent les joueurs du monde entier.</p>
+ </div>
+ </div>
 
-                <!-- Technical Arsenal Section -->
-                <div class="arsenal-section">
-                    <h3>Arsenal Technique</h3>
-                    <div class="tech-grid">
-                        <div class="tech-item">
-                            <div class="tech-icon">⚙️</div>
-                            <span>Unity</span>
-                        </div>
-                        <div class="tech-item">
-                            <div class="tech-icon">📦</div>
-                            <span>Unreal Engine</span>
-                        </div>
-                        <div class="tech-item">
-                            <div class="tech-icon">🪟</div>
-                            <span>C#</span>
-                        </div>
-                        <div class="tech-item">
-                            <div class="tech-icon">&lt;/&gt;</div>
-                            <span>C++</span>
-                        </div>
-                        <div class="tech-item">
-                            <div class="tech-icon">🎨</div>
-                            <span>Blender/Maya</span>
-                        </div>
-                        <div class="tech-item">
-                            <div class="tech-icon">🖼️</div>
-                            <span>Photoshop</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+ <!-- Technical Arsenal Section -->
+ <div class="arsenal-section">
+ <h3>Arsenal Technique</h3>
+ <div class="tech-grid">
+ <div class="tech-item">
+ <div class="tech-icon">[]</div>
+ <span>Unity</span>
+ </div>
+ <div class="tech-item">
+ <div class="tech-icon">[]</div>
+ <span>Unreal Engine</span>
+ </div>
+ <div class="tech-item">
+ <div class="tech-icon">[]</div>
+ <span>C#</span>
+ </div>
+ <div class="tech-item">
+ <div class="tech-icon">&lt;/&gt;</div>
+ <span>C++</span>
+ </div>
+ <div class="tech-item">
+ <div class="tech-icon">[]</div>
+ <span>Blender/Maya</span>
+ </div>
+ <div class="tech-item">
+ <div class="tech-icon">[]</div>
+ <span>Photoshop</span>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </section>
 
-    <!-- CONTACT SECTION -->
-    <section class="page" id="contact">
-        <div class="contact-container">
-            <div class="section-header">
-                <span class="section-tag">Contactez-moi</span>
-                <h2>Restons <span class="gradient-text">Connectés</span></h2>
-                <p>Retrouvez-moi sur le paysage numérique. Choisissez votre plateforme préférée et construisons quelque chose d'incroyable ensemble!</p>
-            </div>
+ <!-- CONTACT SECTION -->
+ <section class="page" id="contact">
+ <div class="contact-container">
+ <div class="section-header">
+ <span class="section-tag">Contactez-moi</span>
+ <h2>Restons <span class="gradient-text">Connects</span></h2>
+ <p>Retrouvez-moi sur le paysage numrique. Choisissez votre plateforme prfre et construisons quelque chose d'incroyable ensemble!</p>
+ </div>
 
-            <!-- Social Links Section -->
-            <div class="social-links-section">
-                <div class="social-links-grid">
-                    <a href="https://github.com/AegonSnowX" target="_blank" class="social-link-card github">
-                        <div class="social-link-icon">
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                            </svg>
-                        </div>
-                        <h3>GitHub</h3>
-                        <p>Découvrez mes projets, dépôts de code et contributions open source</p>
-                    </a>
+ <!-- Social Links Section -->
+ <div class="social-links-section">
+ <div class="social-links-grid">
+ <a href="https://github.com/AegonSnowX" target="_blank" class="social-link-card github">
+ <div class="social-link-icon">
+ <svg viewBox="0 0 24 24" fill="currentColor">
+ <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+ </svg>
+ </div>
+ <h3>GitHub</h3>
+ <p>Dcouvrez mes projets, depots de code et contributions open source</p>
+ </a>
 
-                    <a href="https://www.linkedin.com/in/sahaj-ks/" target="_blank" class="social-link-card linkedin">
-                        <div class="social-link-icon">
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/>
-                            </svg>
-                        </div>
-                        <h3>LinkedIn</h3>
-                        <p>Connectez-vous professionnellement et suivez mon parcours en développement de jeux</p>
-                    </a>
+ <a href="https://www.linkedin.com/in/sahaj-ks/" target="_blank" class="social-link-card linkedin">
+ <div class="social-link-icon">
+ <svg viewBox="0 0 24 24" fill="currentColor">
+ <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/>
+ </svg>
+ </div>
+ <h3>LinkedIn</h3>
+ <p>Connectez-vous professionnellement et suivez mon parcours en developpement de jeux</p>
+ </a>
 
-                    <a href="https://instagram.com" target="_blank" class="social-link-card instagram">
-                        <div class="social-link-icon">
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0m0 2.25c5.385 0 9.75 4.365 9.75 9.75s-4.365 9.75-9.75 9.75-9.75-4.365-9.75-9.75 4.365-9.75 9.75-9.75zm0 1.5c-4.549 0-8.25 3.701-8.25 8.25s3.701 8.25 8.25 8.25 8.25-3.701 8.25-8.25-3.701-8.25-8.25-8.25zm3.75 8.25c0 2.071-1.679 3.75-3.75 3.75s-3.75-1.679-3.75-3.75 1.679-3.75 3.75-3.75 3.75 1.679 3.75 3.75zm1.5-4.5c0 .414-.336.75-.75.75s-.75-.336-.75-.75.336-.75.75-.75.75.336.75.75z"/>
-                            </svg>
-                        </div>
-                        <h3>Instagram</h3>
-                        <p>Suivez mon parcours créatif, mes moments de jeu et les coulisses du développement</p>
-                    </a>
+ <a href="https://instagram.com" target="_blank" class="social-link-card instagram">
+ <div class="social-link-icon">
+ <svg viewBox="0 0 24 24" fill="currentColor">
+ <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0m0 2.25c5.385 0 9.75 4.365 9.75 9.75s-4.365 9.75-9.75 9.75-9.75-4.365-9.75-9.75 4.365-9.75 9.75-9.75zm0 1.5c-4.549 0-8.25 3.701-8.25 8.25s3.701 8.25 8.25 8.25 8.25-3.701 8.25-8.25-3.701-8.25-8.25-8.25zm3.75 8.25c0 2.071-1.679 3.75-3.75 3.75s-3.75-1.679-3.75-3.75 1.679-3.75 3.75-3.75 3.75 1.679 3.75 3.75zm1.5-4.5c0 .414-.336.75-.75.75s-.75-.336-.75-.75.336-.75.75-.75.75.336.75.75z"/>
+ </svg>
+ </div>
+ <h3>Instagram</h3>
+ <p>Suivez mon parcours cratif, mes moments de jeu et les coulisses du developpement</p>
+ </a>
 
-                    <a href="mailto:Sahajswag3500@gmail.com" class="social-link-card email">
-                        <div class="social-link-icon">
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                            </svg>
-                        </div>
-                        <h3>Email</h3>
-                        <p>Envoyez-moi un message direct pour des demandes commerciales, collaborations ou simplement pour dire bonjour</p>
-                    </a>
-                </div>
-            </div>
-        </div>
+ <a href="mailto:Sahajswag3500@gmail.com" class="social-link-card email">
+ <div class="social-link-icon">
+ <svg viewBox="0 0 24 24" fill="currentColor">
+ <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+ </svg>
+ </div>
+ <h3>Email</h3>
+ <p>Envoyez-moi un message direct pour des demandes commerciales, collaborations ou simplement pour dire bonjour</p>
+ </a>
+ </div>
+ </div>
+ </div>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Aegon</h4>
-                    <p>Développeur de Jeux & Technologue Créatif</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Liens Rapides</h4>
-                    <ul>
-                        <li><a href="#home">Accueil</a></li>
-                        <li><a href="#projects">Projets</a></li>
-                        <li><a href="#tech">Technologies</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Suivre</h4>
-                    <ul>
-                        <li><a href="https://github.com/AegonSnowX" target="_blank" rel="noopener">GitHub</a></li>
-                        <li><a href="https://www.linkedin.com/in/sahaj-ks/" target="_blank" rel="noopener">LinkedIn</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Aegon. Tous droits réservés.</p>
-            </div>
-        </footer>
-    </section>
+ <!-- Footer -->
+ <footer class="footer">
+ <div class="footer-content">
+ <div class="footer-section">
+ <h4>Aegon</h4>
+ <p>Dveloppeur de Jeux & Technologue Cratif</p>
+ </div>
+ <div class="footer-section">
+ <h4>Liens Rapides</h4>
+ <ul>
+ <li><a href="#home">Accueil</a></li>
+ <li><a href="#projects">Projets</a></li>
+ <li><a href="#tech">Technologies</a></li>
+ <li><a href="#contact">Contact</a></li>
+ </ul>
+ </div>
+ <div class="footer-section">
+ <h4>Suivre</h4>
+ <ul>
+ <li><a href="https://github.com/AegonSnowX" target="_blank" rel="noopener">GitHub</a></li>
+ <li><a href="https://www.linkedin.com/in/sahaj-ks/" target="_blank" rel="noopener">LinkedIn</a></li>
+ <li><a href="#contact">Contact</a></li>
+ </ul>
+ </div>
+ </div>
+ <div class="footer-bottom">
+ <p>&copy; &copy; 2026 Aegon. Tous droits reserves.</p>
+ </div>
+ </footer>
+ </section>
 
-    </body>
-    <script src="script.js"></script>
+ </body>
+ <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+
 
